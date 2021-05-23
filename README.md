@@ -1,8 +1,23 @@
 # tim-omalley-portfolio
 
+This site is to showcase who I am and some of the work that I have done in the web development field. You will find links to projects that I have deployed on the web as well as the github repositories associated with them. 
 
+## Features
+
+- On site navigation to the projects featured on the web page.
+- Links to my resume and github.
+- An overview of my past work experience and coding experience.
+- Links to my deployed projects.
+
+#Technologies Used
+
+-HTML
+-Tailwind CSS
+-PostCSS CLI
+-AutoPrefixer
 
 ## License
+
 MIT License
 
 Copyright (c) 2021 Timothy O'Malley
