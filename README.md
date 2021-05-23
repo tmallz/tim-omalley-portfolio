@@ -11,10 +11,8 @@ This site is to showcase who I am and some of the work that I have done in the w
 
 #Technologies Used
 
--HTML
--Tailwind CSS
--PostCSS CLI
--AutoPrefixer
+- HTML.
+- CSS (Framework: Tailwind CSS).
 
 ## License
 
