@@ -9,10 +9,15 @@ This site is to showcase who I am and some of the work that I have done in the w
 - An overview of my past work experience and coding experience.
 - Links to my deployed projects.
 
-#Technologies Used
+# Technologies Used
 
 - HTML.
 - CSS (Framework: Tailwind CSS).
+
+## Screenshot
+
+![image](https://user-images.githubusercontent.com/61262154/120514963-6fe7c080-c393-11eb-8097-1c2d26a014bc.png)
+
 
 ## License
 
