@@ -3,17 +3,15 @@ import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  preprocess: preprocess(),
+
   kit: {
     adapter: adapter({
-      pages: 'docs',
-      assets: 'docs',
+      pages: 'build',
+      assets: 'build',
+      fallback: null,
     }),
   },
-  // paths: {
-  //   // change below to your repo name
-  //   base: dev ? '' : '/tim-omalley-portfolio',
-  // },
-  target: '#svelte',
   preprocess: [
     preprocess({
       postcss: true,
