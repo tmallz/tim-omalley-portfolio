@@ -11,14 +11,9 @@ const config = {
       assets: 'docs',
       domain: null,
       jekyll: false,
-      fallback: null,
+      fallback: 'index.html',
       precompress: null,
     }),
-    prerender: {
-      default: true,
-      crawl: true,
-      enabled: true,
-    },
   },
   preprocess: [
     preprocess({
