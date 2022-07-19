@@ -12,7 +12,7 @@ const config = {
       domain: null,
       jekyll: false,
       fallback: null,
-      precompress: false,
+      precompress: null,
     }),
   },
   preprocess: [
@@ -23,8 +23,6 @@ const config = {
   paths: {
     base: dev ? '' : '/tim-omalley-portfolio',
   },
-  // If you are not using a .nojekyll file, change your appDir to something not starting with an underscore.
-  // For example, instead of '_app', use 'app_', 'internal', etc.
   appDir: 'internal',
 };
 
