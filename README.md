@@ -1,44 +1,38 @@
-# tim-omalley-portfolio
+# create-svelte
 
-This site is to showcase who I am and some of the work that I have done in the web development field. You will find links to projects that I have deployed on the web as well as the github repositories associated with them. 
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Features
+## Creating a project
 
-- On site navigation to the projects featured on the web page.
-- Links to my resume and github.
-- An overview of my past work experience and coding experience.
-- Links to my deployed projects.
+If you're seeing this, you've probably already done this step. Congrats!
 
-# Technologies Used
+```bash
+# create a new project in the current directory
+npm init svelte
 
-- HTML.
-- CSS (Framework: Tailwind CSS).
+# create a new project in my-app
+npm init svelte my-app
+```
 
-## Screenshot
+## Developing
 
-![image](https://user-images.githubusercontent.com/61262154/120514963-6fe7c080-c393-11eb-8097-1c2d26a014bc.png)
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
+```bash
+npm run dev
 
-## License
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-MIT License
+## Building
 
-Copyright (c) 2021 Timothy O'Malley
+To create a production version of your app:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+```bash
+npm run build
+```
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+You can preview the production build with `npm run preview`.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
