@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Tim O'Malley Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="./public/build/tailwind.css"
+		/>
+	</head>
+	<body>
+		<nav class="bg-gray-800">
+			<div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+				<div class="relative flex items-center justify-between h-16">
+					<div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+						<!-- Mobile menu button-->
+						<button
+							type="button"
+							class="
+								inline-flex
+								items-center
+								justify-center
+								p-2
+								rounded-md
+								text-gray-400
+								hover:text-white hover:bg-gray-700
+								focus:outline-none
+								focus:ring-2
+								focus:ring-inset
+								focus:ring-white
+							"
+							aria-controls="mobile-menu"
+							aria-expanded="false"
+						>
+							<span class="sr-only">Open main menu</span>
+							<!--
+                  Icon when menu is closed.
+      
+                  Heroicon name: outline/menu
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+							<svg
+								class="block h-6 w-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h16M4 18h16"
+								/>
+							</svg>
+							<!--
+                  Icon when menu is open.
+      
+                  Heroicon name: outline/x
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+							<svg
+								class="hidden h-6 w-6"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+								aria-hidden="true"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</button>
+					</div>
+					<div
+						class="
+							flex-1 flex
+							items-center
+							justify-center
+							sm:items-stretch sm:justify-start
+						"
+					>
+						<div class="flex-shrink-0 flex items-center">
+							<p class="text-white text-3xl">Tim O'Malley Portfolio</p>
+						</div>
+						<div class="origin-top-right absolute right-0">
+							<div class="hidden sm:block sm:ml-6">
+								<div class="flex space-x-4">
+									<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+									<a
+										href="#about-me"
+										class="
+											bg-gray-900
+											text-white
+											px-3
+											py-2
+											rounded-md
+											text-sm
+											font-medium
+										"
+										aria-current="page"
+										>About Me</a
+									>
+
+									<a
+										href="#my-work"
+										class="
+											text-gray-300
+											hover:bg-gray-700 hover:text-white
+											px-3
+											py-2
+											rounded-md
+											text-sm
+											font-medium
+										"
+										>My Work</a
+									>
+
+									<a
+										href="./resume/Timothy-OMalley-Resume.pdf"
+										target="_blank"
+										class="
+											text-gray-300
+											hover:bg-gray-700 hover:text-white
+											px-3
+											py-2
+											rounded-md
+											text-sm
+											font-medium
+										"
+										>Resume</a
+									>
+
+									<a
+										href="#contact-me"
+										class="
+											text-gray-300
+											hover:bg-gray-700 hover:text-white
+											px-3
+											py-2
+											rounded-md
+											text-sm
+											font-medium
+										"
+										>Contact Me</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Mobile menu, show/hide based on menu state. -->
+			<div class="sm:hidden" id="mobile-menu">
+				<div class="px-2 pt-2 pb-3 space-y-1">
+					<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+					<a
+						href="#about-me"
+						class="
+							bg-gray-900
+							text-white
+							block
+							px-3
+							py-2
+							rounded-md
+							text-base
+							font-medium
+						"
+						aria-current="page"
+						>About Me</a
+					>
+
+					<a
+						href="#my-work"
+						class="
+							text-gray-300
+							hover:bg-gray-700 hover:text-white
+							block
+							px-3
+							py-2
+							rounded-md
+							text-base
+							font-medium
+						"
+						>My Work</a
+					>
+
+					<a
+						href="./resume/timothy resume.pdf"
+						target="_blank"
+						class="
+							text-gray-300
+							hover:bg-gray-700 hover:text-white
+							block
+							px-3
+							py-2
+							rounded-md
+							text-base
+							font-medium
+						"
+						>Resume</a
+					>
+
+					<a
+						href="#contact-me"
+						class="
+							text-gray-300
+							hover:bg-gray-700 hover:text-white
+							block
+							px-3
+							py-2
+							rounded-md
+							text-base
+							font-medium
+						"
+						>Contact Me</a
+					>
+				</div>
+			</div>
+		</nav>
+
+		<div class="flex" id="about-me">
+			<!-- grid grid-cols-4 gap-2 -->
+			<!-- The about me section -->
+			<div class="w-1/4">
+				<div class="text-4xl text-center">About Me</div>
+				<div class="p-10">
+					<!--Card 1-->
+					<div class="max-w-sm rounded overflow-hidden shadow-lg">
+						<img
+							class="w-full"
+							src="./images/20200930_213531.jpg"
+							alt="A picture of Me"
+						/>
+						<div class="px-6 py-4">
+							<p class="text-gray-700 text-base">
+								My name is Timothy O'Malley, an aspiring Software Engineer/Web
+								Developer. In college I worked with C and C++ and have a pretty
+								strong foundation those. I am currently a mechanical engineer
+								that does HVAC engineering for industrial/commercial buildings.
+								This isn't directly related to software/web development I think
+								a lot of the problem solving skills I have from engineering will
+								be applicable in a the tech industry
+								<br />
+								<br />
+								I have completed a 6 month coding bootcamp at Northwestern
+								University to get the skills necessary to become a full stack
+								web developer. As of now we have done a done a lot of work with
+								HTML/CSS/Javascript and many other technologies in conjunction
+								with them on both the front end and the back end. These other
+								technologies can be seen on the projects showcased on this page,
+								on my github
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="text-4xl text-center" id="contact-me">Contact Me</div>
+				<div class="p-10">
+					<!--Card 1-->
+					<div class="max-w-sm rounded overflow-hidden shadow-lg">
+						<div class="px-6 py-4">
+							<p class="text-gray-700 text-base">
+								Phone: 630-379-7358 <br />
+								Email: tomalley24@gmail.com <br />
+								gitHub:
+								<a
+									href="https://github.com/tmallz"
+									target="_blank"
+									class="text-blue-400 hover:underline"
+									>https://github.com/tmallz</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- The section containing my projects -->
+			<div class="w-3/4" id="my-work">
+				<div class="text-4xl text-center">Green Genie</div>
+				<div class="p-10">
+					<!--Card 1-->
+					<div class="rounded overflow-hidden shadow-lg">
+						<a href="https://green-genie5.herokuapp.com/" target="_blank"
+							><img
+								class="w-1/2 mx-auto flex justify-center"
+								src="./images/green-genie.png"
+								alt="Green Genie"
+						/></a>
+						<div class="px-6 py-4">
+							<p class="text-gray-700 text-base">
+								Green Genie is an app that aims to give any marijauna plant
+								growing enthusiast, a database to log for marijuana strains. It
+								will also give you the location of your local despensaries. My
+								responsibilities on this project were the back end, making sure
+								the routes worked properly, and the authentication both front
+								and back end for that. I also did a bit of the handlebars.js
+								work and some of the styling on the web pages. Click the image
+								to see the deployed application.
+							</p>
+							<a
+								href="https://github.com/tmallz/GreenGenie"
+								target="_blank"
+								class="text-blue-400 hover:underline"
+								>Click here to see the repo</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="text-4xl text-center">Tech Blog</div>
+				<div class="p-10">
+					<!--Card 2-->
+					<div class="rounded overflow-hidden shadow-lg">
+						<a href="https://tech-blog-tlo.herokuapp.com/" target="_blank"
+							><img
+								class="w-1/2 mx-auto flex justify-center"
+								src="./images/tech-blog.PNG"
+								alt="Blog Home screen"
+						/></a>
+						<div class="px-6 py-4">
+							<p class="text-gray-700 text-base">
+								The Tech Blog is a full stack application that allows to user to
+								interact with with posts. The user can log in or make an
+								account. Once logged in the user has full access to the sites
+								functionality. This includes accessing their dashboard to see
+								all posts they have made, and from there they can edit/delete
+								the posts. The user can also comment on posts made by other
+								users. Click the image to see the deployed application
+							</p>
+							<a
+								href="https://github.com/tmallz/tim-omalley-hw-week-14"
+								target="_blank"
+								class="text-blue-400 hover:underline"
+								>Click here to see the repo</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="text-4xl text-center">Moodue</div>
+				<div class="p-10">
+					<!--Card 3-->
+					<div class="rounded overflow-hidden shadow-lg">
+						<a href="https://tmallz.github.io/moodue/" target="_blank"
+							><img
+								class="w-1/2 mx-auto flex justify-center"
+								src="./images/moodue.png"
+								alt="Moodue"
+						/></a>
+						<div class="px-6 py-4">
+							<p class="text-gray-700 text-base">
+								Moodue is an events services. This let's the users get local
+								events based on their mood. By the user choosing the mood
+								"Lively" or "Mellow", for now it filters movies from a mock api
+								we made for the project. My responsibilities on this project
+								were all of the JavaScript used. I also did some of the HTML and
+								researched the APIs we could use before making the mock API we
+								ended up using. Click the image to see the deployed application.
+							</p>
+							<a
+								href="https://github.com/tmallz/moodue"
+								target="_blank"
+								class="text-blue-400 hover:underline"
+								>Click here to see the repo</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="text-4xl text-center">Weather Dashboard</div>
+				<div class="p-10">
+					<!--Card 4-->
+					<div class="rounded overflow-hidden shadow-lg">
+						<a
+							href="https://tmallz.github.io/Tim-OMalley-Homework-6/"
+							target="_blank"
+							><img
+								class="w-1/2 mx-auto flex justify-center"
+								src="./images/weatherdashboard.png"
+								alt="Weather Dashboard"
+						/></a>
+						<div class="px-6 py-4">
+							<p class="text-gray-700 text-base">
+								The weather dashboard app provides the user with weather data
+								about a city that they search for. Once the user searches for a
+								city they are provided with the current weather conditions as
+								well as a five day forcast. The app generates a button of past
+								searches for easy access past search results. My
+								responsibilities included the full scope of the project. Click
+								the image to see the deployed application
+							</p>
+							<a
+								href="https://github.com/tmallz/Tim-OMalley-Homework-6"
+								target="_blank"
+								class="text-blue-400 hover:underline"
+								>Click here to see the repo</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
