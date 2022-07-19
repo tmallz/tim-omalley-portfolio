@@ -12,7 +12,7 @@
     </div>
     <div class="flex">
       <a href = "/" class="btn btn-ghost normal-case text-xl">Tim O'Malley Portfolio</a>
-      <label class="swap swap-rotate">
+      <label class="swap swap-rotate lg:hidden">
   
         <!-- this hidden checkbox controls the state -->
         <input type="checkbox" data-toggle-theme="coffee,fantasy" data-act-class="ACTIVECLASS" />
