@@ -1,0 +1,84 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "immutable/start-24bc0059.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-d2b411d1.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/lib/BottomNav/BottomNav.svelte",
+      "src/routes/lib/Navbar/Navbar.svelte",
+      "src/routes/my-work.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "immutable/pages/__layout.svelte-793114e4.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d2b411d1.js",
+      "src/routes/lib/Navbar/Navbar.svelte",
+      "src/routes/lib/BottomNav/BottomNav.svelte"
+    ],
+    "css": [
+      "immutable/assets/__layout-ec3aa403.css"
+    ]
+  },
+  "src/routes/lib/Navbar/Navbar.svelte": {
+    "file": "immutable/pages/lib/Navbar/Navbar.svelte-c93d7310.js",
+    "src": "src/routes/lib/Navbar/Navbar.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d2b411d1.js"
+    ]
+  },
+  "src/routes/lib/BottomNav/BottomNav.svelte": {
+    "file": "immutable/pages/lib/BottomNav/BottomNav.svelte-c92e8683.js",
+    "src": "src/routes/lib/BottomNav/BottomNav.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d2b411d1.js"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "immutable/error.svelte-21e8a5a9.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d2b411d1.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "immutable/pages/index.svelte-f8dfa0f1.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d2b411d1.js"
+    ]
+  },
+  "src/routes/my-work.svelte": {
+    "file": "immutable/pages/my-work.svelte-b15e963d.js",
+    "src": "src/routes/my-work.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-d2b411d1.js"
+    ]
+  },
+  "_index-d2b411d1.js": {
+    "file": "immutable/chunks/index-d2b411d1.js"
+  },
+  "src/routes\\__layout.css": {
+    "file": "immutable/assets/__layout-ec3aa403.css",
+    "src": "src/routes\\__layout.css"
+  }
+}
